@@ -1,9 +1,9 @@
-apiVersion: network.aws.crossplane.io/v1alpha3
+apiVersion: ec2.aws.crossplane.io/v1beta1
 kind: VPC
 metadata:
-  name: argo-vpc
+  name: argo-east-vpc
 spec:
-  cidrBlock: 192.168.0.0/16
-  enableDnsHostNames: true
-  enableDnsSupport: true
-  reclaimPolicy: Delete
+  forProvider:
+  	cidrBlock: 192.168.0.0/16
+  	enableDnsHostNames: true
+  	enableDnsSupport: true
