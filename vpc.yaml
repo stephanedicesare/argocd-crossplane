@@ -4,6 +4,6 @@ metadata:
   name: argo-east-vpc
 spec:
   forProvider:
-  	cidrBlock: 192.168.0.0/16
-  	enableDnsHostNames: true
-  	enableDnsSupport: true
+    cidrBlock: 192.168.0.0/16
+    enableDnsHostNames: true
+    enableDnsSupport: true
